@@ -1,0 +1,179 @@
+main {
+  background-image: url("https://media4.giphy.com/media/Y1wEgYUY21PPQyzHV5/giphy.gif?cid=ecf05e47qsetgafzpxz965wtbws9d47st86kirg0k4ymknxm&rid=giphy.gif&ct=g");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  max-width: 100%;
+  font-family: "Oswald", sans-serif;
+  height: 500px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+li {
+  float: left;
+  height: 10px;
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+header img {
+  width: 30%;
+  height: 100px;
+  float: left;
+  text-align: center;
+  mix-blend-mode: difference;
+  filter: alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+
+
+.button1 {
+  color: rgb(118, 142, 167);
+  background: white;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+
+ .why {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 200px;
+     font-family: "Oswald", sans-serif;
+
+  font: 1em;
+} 
+
+.section1 {
+  background: rgba(150, 158, 165, 0.5);
+  color: black;
+  font-family: "Oswald", sans-serif;
+height: 300px;
+  display: flex;
+  padding-right: 5%;
+ 
+  width: 100%;
+} 
+
+
+.volunteer {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+    font-family: "Oswald", sans-serif;
+text-align: center;
+  font-size: 1.5em;
+  margin-top: 10%;
+}
+
+
+body main span {
+  display: block;
+  color: black;
+}
+
+section + section button {
+  background: rgba(150, 158, 165, 0.5);
+  color: black;
+  font-family: "Oswald", sans-serif;
+  border: 1px solid black;
+}
+
+.image {
+  width: 25%;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-right: 20%;
+  float: left;
+  display: flex;
+  height: 200px;
+  margin-bottom: 5%;
+}
+
+body main section + section {
+  background: white;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  margin-top: 10%;
+  color: white;
+  height: 200px;
+}
+
+footer h4 {
+  color: rgba(150, 158, 165, 0.5);
+
+  font-family: "Oswald", sans-serif;
+  float: left;
+  display: block;
+}
+
+footer li {
+  font-family: "Oswald", sans-serif;
+  float: left;
+  padding-top: 50px;
+  width: 70px;
+  list-style: none;
+  padding-right: 80px;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+
+footer p {
+  font-family: "Oswald", sans-serif;
+  float: right;
+  height: 80px;
+  display: inline-block;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  float: right;
+  padding-left: 100px;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
