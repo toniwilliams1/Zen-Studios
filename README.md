@@ -1,6 +1,5 @@
 # Zen-Studios
 
-About
 Zen Studios is a landing page that was built for Zen Studios LLC, a photography studio based in Brooklyn, New York. They were in need of a new website to attract new clients, and I was contacted to create a brand new website.
 
 
