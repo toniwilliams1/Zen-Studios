@@ -1,17 +1,60 @@
-#scroll-container {
+
  
+ 
+ 
+ /***************
+Clearfix Hack for Floated Elements
+/***************/
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*************
+Color Scrollbar
+/*************/
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+/***********************
+/* Handle */
+/**********************/
+
+::-webkit-scrollbar-thumb {
+  background: #ccaa33;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccaa33;
+}
+
+/****************
+  Scrolling Text Effect
+  /*******************/
+
+#scroll-container {
   border-radius: 5px;
   overflow: hidden;
 }
 
 #scroll-text {
-    font-family: "Oswald", sans-serif;
-font-size: 2em;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
   /* animation properties */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  
+
   -moz-animation: my-animation 15s linear infinite;
   -webkit-animation: my-animation 15s linear infinite;
   animation: my-animation 15s linear infinite;
@@ -19,14 +62,22 @@ font-size: 2em;
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 @keyframes my-animation {
@@ -40,20 +91,11 @@ font-size: 2em;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
-
-
-
-/***************
-Clearfix Hack for Floated Elements
-/***************/
-
-.clearfix:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden;
 }
+
+/**************************
+Main Section
+/**************************/
 
 main {
   background-image: url("https://media4.giphy.com/media/3xz2BwtWv1xE2ZKb96/giphy.gif?cid=ecf05e47wt6oapzdo3ldm027osmoq0d93axwaa85ehtwevwi&rid=giphy.gif&ct=g");
@@ -69,26 +111,28 @@ main {
   padding-top: 5%;
 }
 
-
 @media (min-width: 321px) and (max-width: 600px) {
-main {
+  main {
     width: 100%;
-  height: 500px;
+    height: 500px;
   }
 }
 
-
-iframe{
+iframe {
   margin-right: 5%;
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
-iframe {
-  height: 150px;
-  width: 150px;
-  display: none;
+  iframe {
+    height: 150px;
+    width: 150px;
+    display: none;
   }
 }
+
+/********************
+Unordered Lists
+/********************/
 
 li {
   float: left;
@@ -99,13 +143,12 @@ li {
   padding-left: 40px;
   font-family: "Oswald", sans-serif;
   font-size: 1.5em;
-  color: #CCAA33;
+  color: #ccaa33;
 }
-
 
 footer li {
   font-family: "Oswald", sans-serif;
-  
+
   padding-top: 50px;
   width: 70px;
   list-style: none;
@@ -115,85 +158,75 @@ footer li {
   color: white;
 }
 
-li:hover{
-color: yellow;
-
-}
-
-header img {
-  width: 30%;
-  height: 100px;
-  float: left;
-  text-align: center;
-  
-  opacity: 0.9;
-}
-
-
+/****************
+Buttons
+/******************/
 
 .button1 {
   color: black;
   background: white;
   font-family: "Libre Franklin", sans-serif;
   height: 40px;
- 
- 
 }
 
-
-
-h3{
-  font-size: 1.5em;
+.button1:hover {
+  background-color: #ccaa33;
+  color: black;
 }
 
+/**************
+Why Section
+/***************/
 
- .why {
+.why {
   width: 100%;
   text-align: center;
   margin-top: 5%;
   margin-bottom: 10%;
   height: 100px;
-     font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
 
   font: 1em;
-} 
+}
 
 @media (min-width: 321px) and (max-width: 600px) {
-.why{
+  .why {
     width: 100%;
-  height: 200px;
-  margin-bottom: 10%;
+    height: 200px;
+    margin-bottom: 10%;
   }
 }
 
+ul,
+li:hover {
+  background-color: white;
+  color: black;
+}
+
+/****************
+Visit Us Section
+/******************/
 
 .section1 {
   background: rgba(150, 158, 165, 0.5);
   color: black;
   font-family: "Oswald", sans-serif;
-height: 550px;
+  height: 550px;
   display: flex;
- margin-top: 5%;
+  margin-top: 5%;
   width: 100%;
   padding-top: 5%;
-} 
-
-
+}
 
 @media (min-width: 321px) and (max-width: 600px) {
-  .section1  {
-  width: 100%;
-  height: 700px;
+  .section1 {
+    width: 100%;
+    height: 700px;
     margin-bottom: 10%;
   }
 }
 
-ul:hover{
-  background-color: black;
-  color: white;
-}
-
-.visitUs{
+.visitUs {
   float: left;
   width: 40%;
   margin-left: 15%;
@@ -201,29 +234,32 @@ ul:hover{
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
-.visitUs {
+  .visitUs {
     width: 30%;
-  height: 30px;
-  float: left;
+    height: 30px;
+    float: left;
   }
 }
 
-
-.visitYou{
+.visitYou {
   float: right;
-   width: 40%;
+  width: 40%;
   margin-left: 20%;
   margin-right: 15%;
   height: 300px;
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
-.visitYou {
+  .visitYou {
     width: 30%;
-  height: 30px;
-  float: right
+    height: 30px;
+    float: right;
   }
 }
+
+/***************
+Volunteer Section
+/******************/
 
 .volunteer {
   width: 100%;
@@ -231,26 +267,24 @@ ul:hover{
   margin-top: 5%;
   margin-bottom: 10%;
   background-color: white;
-    font-family: "Oswald", sans-serif;
-text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
   font-size: 1em;
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
-.volunteer {
+  .volunteer {
     width: 100%;
-  height: 300px;
-  margin-top: 10%;
-  margin-bottom: 5%;
+    height: 300px;
+    margin-top: 10%;
+    margin-bottom: 5%;
   }
 }
-
 
 body main span {
   display: block;
   color: black;
 }
-
 
 .image {
   width: 55%;
@@ -261,6 +295,7 @@ body main span {
   display: flex;
   height: 200px;
   margin-bottom: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 body main section + section {
@@ -275,34 +310,34 @@ footer {
   background-color: black;
   margin-top: 10%;
   color: white;
-  height: 200px;
+  height: 400px;
   width: 100%;
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
-footer {
+  footer {
     width: 100%;
-  height: 300px;
-  margin-top: 5%;
+    height: 300px;
+    margin-top: 5%;
   }
 }
 
-.address{
+.address {
   float: right;
 }
 
 footer h4 {
   color: white;
-font-size: 1.5em;
+  font-size: 1.5em;
   font-family: "Oswald", sans-serif;
   float: left;
   display: block;
+  border-bottom: 1px solid #ccaa33;
 }
 
 footer li {
   font-family: "Oswald", sans-serif;
   float: left;
-  padding-top: 50px;
   width: 70px;
   list-style: none;
   padding-right: 80px;
@@ -332,8 +367,8 @@ footer img {
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 5em;
-  color: #CCAA33;
+  font-size: 8em;
+  color: #ccaa33;
   text-transform: uppercase;
   animation: flip 2s infinite;
   animation-delay: calc(0.2s * var(--i));
@@ -346,18 +381,47 @@ footer img {
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
-.waviy span {
-   font-size: 2em;
+  .waviy span {
+    font-size: 2em;
   }
 }
 
 
+/***************
+Headings
+/***************/
+
+h1 {
+  color: #ccaa33;
+}
 
 h2 {
   text-align: center;
   font-size: 2.5em;
 }
 
-h1{
-  color:#CCAA33 ;
+h3 {
+  font-size: 1.5em;
 }
+
+.social:hover {
+  color: #ccaa33;
+}
+
+.button1:hover {
+  background-color: #ccaa33;
+  color: black;
+}
+
+.rights {
+  width: 100%;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+ul,
+li {
+  margin-top: 15%;
+  height: 50px;
+}
+
