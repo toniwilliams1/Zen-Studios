@@ -4,7 +4,7 @@ Zen Studios is a landing page that was built for Zen Studios LLC, a photography 
 
 
 ## -[View The Live Site Here ](https://thezenstudios.netlify.app/)
-## Authors
+## Author
 
 - [Toni Williams](https://toniwilliams.netlify.app)
 
