@@ -1,8 +1,4 @@
-
- 
- 
- 
- /***************
+/***************
 Clearfix Hack for Floated Elements
 /***************/
 
@@ -60,6 +56,10 @@ Color Scrollbar
   animation: my-animation 15s linear infinite;
 }
 
+#scroll-text:hover {
+  color: #ccaa33;
+}
+
 /* for Firefox */
 @-moz-keyframes my-animation {
   from {
@@ -104,11 +104,8 @@ main {
   color: white;
   width: 100%;
   font-family: "Oswald", sans-serif;
-  height: 500px;
-  padding-left: 10%;
-  padding-right: 10%;
+  height: 700px;
   text-align: center;
-  padding-top: 5%;
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
@@ -118,8 +115,15 @@ main {
   }
 }
 
+.zen{
+color: #ccaa33;
+  font-size: 1.5em;
+  width: 40%;
+  margin-left: 30%;
+}
+
 iframe {
-  margin-right: 5%;
+  border: 2px solid black;
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
@@ -141,21 +145,10 @@ li {
   margin: 0 auto;
   text-align: center;
   padding-left: 40px;
+
   font-family: "Oswald", sans-serif;
   font-size: 1.5em;
   color: #ccaa33;
-}
-
-footer li {
-  font-family: "Oswald", sans-serif;
-
-  padding-top: 50px;
-  width: 70px;
-  list-style: none;
-  padding-right: 80px;
-  display: inline-block;
-  border-bottom: 1px solid white;
-  color: white;
 }
 
 /****************
@@ -169,10 +162,21 @@ Buttons
   height: 40px;
 }
 
-.button1:hover {
-  background-color: #ccaa33;
+
+.button2 {
   color: black;
+  background: white;
+  font-family: "Libre Franklin", sans-serif;
+  height: 40px;
+  margin-left: 20%;
 }
+
+.button1:hover, .button2:hover {
+  background-color: #ccaa33;
+  color: white;
+}
+
+
 
 /**************
 Why Section
@@ -213,9 +217,9 @@ Visit Us Section
   font-family: "Oswald", sans-serif;
   height: 550px;
   display: flex;
-  margin-top: 5%;
+  margin-top: 1%;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 @media (min-width: 321px) and (max-width: 600px) {
@@ -257,6 +261,11 @@ Visit Us Section
   }
 }
 
+.visitP {
+  margin-left: 20%;
+  width: 45%;
+}
+
 /***************
 Volunteer Section
 /******************/
@@ -295,6 +304,7 @@ body main span {
   display: flex;
   height: 200px;
   margin-bottom: 5%;
+  border: 2px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -306,63 +316,13 @@ body main section + section {
   text-align: center;
 }
 
-footer {
-  background-color: black;
-  margin-top: 10%;
-  color: white;
-  height: 400px;
-  width: 100%;
-}
-
-@media (min-width: 321px) and (max-width: 600px) {
-  footer {
-    width: 100%;
-    height: 300px;
-    margin-top: 5%;
-  }
-}
-
-.address {
-  float: right;
-}
-
-footer h4 {
-  color: white;
-  font-size: 1.5em;
-  font-family: "Oswald", sans-serif;
-  float: left;
-  display: block;
-  border-bottom: 1px solid #ccaa33;
-}
-
-footer li {
-  font-family: "Oswald", sans-serif;
-  float: left;
-  width: 70px;
-  list-style: none;
-  padding-right: 80px;
-  display: inline-block;
-  border-bottom: 1px solid white;
-}
-
-footer p {
-  font-family: "Oswald", sans-serif;
-  float: left;
-  height: 80px;
-  margin-top: 5%;
-  display: inline-block;
-  color: white;
-}
-
-footer img {
-  width: 30px;
-  height: 30px;
-  float: right;
-  padding-left: 100px;
-}
+/***************
+Headings
+/***************/
 
 .waviy {
   position: relative;
+  margin-right: 15%;
 }
 .waviy span {
   position: relative;
@@ -372,6 +332,7 @@ footer img {
   text-transform: uppercase;
   animation: flip 2s infinite;
   animation-delay: calc(0.2s * var(--i));
+  margin-right: 5%;
 }
 @keyframes flip {
   0%,
@@ -386,11 +347,6 @@ footer img {
   }
 }
 
-
-/***************
-Headings
-/***************/
-
 h1 {
   color: #ccaa33;
 }
@@ -401,27 +357,76 @@ h2 {
 }
 
 h3 {
+  font-size: 2em;
+  margin-left: 20%;
+}
+
+h3 p {
+  margin-left: 20%;
+  font-size: 1em;
+}
+
+/******************
+Footer
+/*********************/
+
+footer {
+  background-color: black;
+  margin-top: 10%;
+  color: white;
+  height: 200px;
+  width: 100%;
+}
+
+@media (min-width: 321px) and (max-width: 600px) {
+  footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+  }
+}
+
+.address {
+  float: right;
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer h4 {
+  color: white;
   font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+  float: left;
+  margin: 0 auto;
+  border-bottom: 2px solid #ccaa33;
 }
 
-.social:hover {
-  color: #ccaa33;
+footer p {
+  font-family: "Oswald", sans-serif;
+  float: left;
+  height: 30px;
+  display: inline-block;
+  padding-top: 2%;
+  color: white;
 }
 
-.button1:hover {
-  background-color: #ccaa33;
-  color: black;
+footer img {
+  width: 30px;
+  height: 30px;
+  float: right;
+  padding-left: 100px;
 }
 
 .rights {
   width: 100%;
-  margin-left: 35%;
-  margin-top: 10%;
+  margin-left: 40%;
 }
 
-ul,
-li {
-  margin-top: 15%;
-  height: 50px;
+/**********
+Icons
+/*******/
+
+.social:hover {
+  color: #ccaa33;
 }
 
