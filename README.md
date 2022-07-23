@@ -20,6 +20,6 @@ HTML/CSS, JavaScript, REACT, Node.js, TheCocktailDB API
 I learned many things in this porject. My CSS styling skills and responsive web design was put to the test.
 
 
-## - Feedback
+## Feedback:
 
 If you have any feedback, please reach out to us at toniwilliams@outlook.com
